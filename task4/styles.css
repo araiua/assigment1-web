@@ -14,9 +14,6 @@ h1, h2 {
   font-family: 'Quicksand', sans-serif;
 }
 
-/* =========================================================
-   NAV
-========================================================= */
 #main-nav {
   background-color: #5b21b6;
   padding: 16px 24px;
@@ -42,9 +39,6 @@ h1, h2 {
   padding: 50px 20px;
 }
 
-/* =========================================================
-   TABLE — heading with ID selector
-========================================================= */
 #grades-heading {
   text-align: center;
   color: #5b21b6;
@@ -87,9 +81,6 @@ h1, h2 {
   font-weight: 700;
 }
 
-/* =========================================================
-   FORM — split layout inspired by sign-up card
-========================================================= */
 .form-wrapper {
   display: table;
   width: 100%;
