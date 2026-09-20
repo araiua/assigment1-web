@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fbeff3;
+  font-family: 'Space Mono', monospace; 
+  font-size: 16px;
+  color: #2b1d1a;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'UnifrakturCook', cursive;
+  letter-spacing: 1px;
+  color: #2b1d1a;
+}
+
+p {
+  margin: 0 0 14px 0;
+}
+
+a {
+  color: #7a3b57;
+  text-decoration: none;
+}
+
+a:hover {   
+  color: #c26289;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+#site-header {
+  background-color: #201512;
+  text-align: center;
+  padding: 40px 20px 30px 20px;
+  border-bottom: 4px solid #f4c9d9;
+}
+
+.fur-strip {
+  height: 26px;
+  background-image:
+    radial-gradient(circle at 20% 40%, #000 0 6px, transparent 7px),
+    radial-gradient(circle at 55% 60%, #000 0 8px, transparent 9px),
+    radial-gradient(circle at 80% 30%, #000 0 5px, transparent 6px),
+    linear-gradient(90deg, #6b4a30, #4a3220 40%, #6b4a30 70%, #4a3220);
+  background-size: 60px 26px, 70px 26px, 50px 26px, cover;
+  background-repeat: repeat-x;
+  opacity: 0.85;
+  margin-bottom: 12px;
+}
+
+#site-title {
+  font-size: 3rem;
+  color: #f9d6e4;
+  margin: 6px 0;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.tagline {
+  color: #e6b9c9;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  margin: 0 0 10px 0;
+}
+
+#main-nav {
+  background-color: #fff5f8;
+  text-align: center;
+  padding: 18px 10px;
+  border-bottom: 2px solid #f2c9db;
+}
+
+.nav-pill {
+  display: inline-block;
+  margin: 4px 8px;
+  padding: 8px 18px;
+  border: 2px solid #2b1d1a;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2b1d1a;
+}
+
+.nav-pill:hover {
+  background-color: #2b1d1a;
+  color: #f9d6e4;
+  text-decoration: none;
+}
+
+#page-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+#sidebar {
+  float: left;
+  width: 26%;
+  background-color: #fff0f5;
+  border: 2px solid #f2c9db;
+  border-radius: 14px;
+  padding: 18px;
+  margin-right: 3%;
+  box-shadow: 3px 3px 0 #f2c9db;
+}
+
+#sidebar h2 {
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+
+.side-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 20px 0;
+}
+
+.side-list li {
+  border-bottom: 1px dashed #e6b9c9;
+  padding: 8px 0;
+}
+
+#main-content {
+  float: right;
+  width: 71%;
+}
+
+#main-content section {
+  background-color: #ffffff;
+  border: 2px solid #f2c9db;
+  border-radius: 14px;
+  padding: 22px 26px;
+  margin-bottom: 24px;
+}
+
+.profile-card {
+  display: table;
+  width: 100%;
+  background-color: #fff0f5 !important;
+  border: 3px solid #2b1d1a !important;
+}
+
+.profile-photo {
+  display: table-cell;
+  width: 120px;
+  border: 3px solid #2b1d1a;
+  vertical-align: top;
+}
+
+.profile-info {
+  display: table-cell;
+  padding-left: 22px;
+  vertical-align: middle;
+}
+
+.my-id {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: #7a3b57;
+}
+
+/* =========================================================
+   LISTS (Task 1 — ordered / unordered, at least 4 items each)
+========================================================= */
+.numbered-list, .bullet-list {
+  padding-left: 24px;
+}
+
+.numbered-list li, .bullet-list li {
+  margin-bottom: 6px;
+}
+
+.numbered-list {
+  list-style-type: decimal;
+}
+
+.bullet-list {
+  list-style-type: square;
+  color: #7a3b57;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+#site-footer {
+  clear: both;
+  background-color: #201512;
+  color: #f2c9db;
+  text-align: center;
+  padding: 26px 10px;
+  font-size: 0.8rem;
+}
+
+.footer-nav a {
+  color: #f9d6e4;
+}
+
+.footer-nav a:hover {
+  color: #ffffff;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 700px) {
+  #sidebar, #main-content {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .profile-card, .profile-photo, .profile-info {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .profile-photo {
+    margin-bottom: 14px;
+  }
+}

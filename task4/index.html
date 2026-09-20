@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grades &amp; Feedback Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="main-nav">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="../exercise3/index.html" class="nav-link">Tribute Page</a>
+    <a href="index.html" class="nav-link">Grades &amp; Form</a>
+    <a href="#feedback-form" class="nav-link">Feedback</a>
+  </nav>
+
+  <!-- ===================== TABLE SECTION ===================== -->
+  <section class="page-section">
+    <h1 id="grades-heading">Student Grades</h1>
+
+    <table class="grades-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Grade</th>
+          <th>Comment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Aigerim T.</td>
+          <td>Web Development</td>
+          <td>95</td>
+          <td>Excellent CSS work</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>Databases</td>
+          <td>88</td>
+          <td>Strong on queries</td>
+        </tr>
+        <tr>
+          <td>Nurlan K.</td>
+          <td>Web Development</td>
+          <td>79</td>
+          <td>Needs more practice</td>
+        </tr>
+        <tr>
+          <td>Dana S.</td>
+          <td>Web Development</td>
+          <td>91</td>
+          <td>Clean layout</td>
+        </tr>
+        <tr>
+          <td colspan="2">Class average</td>
+          <td colspan="2">88.25</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===================== FORM SECTION ===================== -->
+  <section class="page-section" id="feedback-form">
+    <div class="form-wrapper">
+
+      <div class="form-illustration">
+        <svg viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="150" cy="120" r="90" fill="#c9a6f5"/>
+          <circle cx="90" cy="230" r="16" fill="#f5c8ff"/>
+          <circle cx="220" cy="260" r="10" fill="#f5c8ff"/>
+          <circle cx="230" cy="90" r="6" fill="#ffffff"/>
+          <circle cx="70" cy="70" r="5" fill="#ffffff"/>
+          <path d="M150 60l10 26 26 4-19 19 5 27-22-14-22 14 5-27-19-19 26-4z" fill="#ffffff"/>
+        </svg>
+        <p class="illustration-caption">We'd love your feedback ✦</p>
+      </div>
+
+      <form class="feedback-card" id="course-feedback">
+        <h2>Course Feedback</h2>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="role">Role</label>
+        <select id="role" name="role">
+          <option value="student">Student</option>
+          <option value="teacher">Teacher</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label>Did you enjoy the course?</label>
+        <div class="radio-group">
+          <label class="radio-option"><input type="radio" name="enjoyed" value="yes" checked> Yes</label>
+          <label class="radio-option"><input type="radio" name="enjoyed" value="no"> No</label>
+        </div>
+
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Tell us more..."></textarea>
+
+        <button type="submit" class="submit-btn">Send feedback</button>
+      </form>
+
+    </div>
+  </section>
+
+  <footer id="site-footer">
+    <p>&copy; 2026 Grades &amp; Form exercise — front-end coursework assignment.</p>
+  </footer>
+
+</body>
+</html>
